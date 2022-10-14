@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dibujo con canvas</title>
+</head>
+
+<body>
+    <h1>MI DIBUJO CON CANVAS</h1>
+    <hr>
+    <canvas id="lnz" width="500" height="500" style="border:1px solid blue; background: #f78b8b;" >
+
+
+    </canvas>
+
+    <script>
+        let lnz = document.getElementById("lnz");
+        let context = lnz.getContext("2d");
+
+        const centerX = lnz.width / 2;
+        const centerY = lnz.height / 2;
+        const X = 500;
+        const Y = 500;
+        const radius = 50;
+
+        
+        context.fillStyle = '#0077aa';
+        
+        context.lineWidth = 5;
+
+
+        //cabeza
+
+        
+        context.arc(centerX, 40, 35, 0, 2 * Math.PI, false);
+
+         
+       
+
+
+
+        context.stroke();
+
+
+
+    </script>
+</body>
+
+</html>
